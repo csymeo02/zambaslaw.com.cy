@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Litigation Services - Zambas Law</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <style>
+    /* Enhanced Professional Litigation Page Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    
+    .service-page {
+      padding: 60px 20px 80px;
+      padding-top: 100px; 
+      background: linear-gradient(135deg, #ffffff, #f4f4f4);
+    }
+    
+    .service-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 60px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      border-radius: 12px;
+      text-align: left;
+    }
+    
+    .page-header {
+      position: relative;
+      margin-bottom: 50px;
+    }
+    
+    .page-header h1 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #1a1a1a;
+      border-bottom: 3px solid #007BFF;
+      padding-bottom: 15px;
+      display: inline-block;
+    }
+    
+    .page-header::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #e0e0e0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    
+    .intro-text {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+      color: #444;
+    }
+    
+    .service-content p {
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #555;
+    }
+    
+    .practice-areas {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .area-group {
+      margin-bottom: 40px;
+    }
+    
+    .area-group h3 {
+      font-size: 22px;
+      color: #007BFF;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .service-content ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .service-content ul li {
+      font-size: 16px;
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+      transition: all 0.3s ease;
+      position: relative;
+      padding-left: 30px;
+    }
+    
+    .service-content ul li:last-child {
+      border-bottom: none;
+    }
+    
+    .service-content ul li::before {
+      content: "\f0da";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      top: 12px;
+      color: #007BFF;
+      transition: transform 0.2s ease;
+    }
+    
+    .service-content ul li:hover {
+      background-color: #f9f9f9;
+      padding-left: 35px;
+    }
+    
+    .service-content ul li:hover::before {
+      transform: translateX(5px);
+    }
+    
+    .cta-section {
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 8px;
+      margin-top: 40px;
+      text-align: center;
+      border-left: 4px solid #007BFF;
+    }
+    
+    .cta-section h3 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background-color: #007BFF;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .cta-button:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,123,255,0.2);
+    }
+    
+    .team-highlights {
+      margin-top: 40px;
+    }
+    
+    .benefits-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    
+    .benefit-card {
+      flex: 1 1 calc(33.333% - 20px);
+      min-width: 250px;
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    
+    .benefit-card i {
+      font-size: 28px;
+      color: #007BFF;
+      margin-bottom: 15px;
+    }
+    
+    .benefit-card h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    .benefit-card p {
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 0;
+    }
+    
+    @media (max-width: 768px) {
+      .service-content {
+        padding: 40px 25px;
+      }
+      
+      .page-header h1 {
+        font-size: 36px;
+      }
+      
+      .practice-areas {
+        grid-template-columns: 1fr;
+      }
+      
+      .benefit-card {
+        flex: 1 1 100%;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .service-content {
+        padding: 30px 20px;
+      }
+      
+      .page-header h1 {
+        font-size: 30px;
+      }
+      
+      .intro-text {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Placeholder for Header -->
+  <div id="header-placeholder"></div>
+
+  <!-- Litigation Service Section -->
+  <section id="litigation" class="service-page">
+    <div class="service-content">
+      <div class="page-header">
+        <h1>LITIGATION SERVICES</h1>
+      </div>
+      
+      <p class="intro-text">At Zambas Law, our experienced litigation team provides comprehensive legal representation across a wide range of practice areas. We combine strategic thinking with aggressive advocacy to protect our clients' interests and achieve favorable outcomes in even the most complex legal disputes.</p>
+      
+      <p>Our litigation attorneys have extensive courtroom experience and a proven track record of success. We handle cases at all levels of the judicial system, from local courts to the highest appellate tribunals, always focusing on efficient and cost-effective resolution strategies tailored to each client's unique situation.</p>
+      
+      <div class="practice-areas">
+        <div class="area-group">
+          <h3><i class="fas fa-landmark"></i> Business & Commercial</h3>
+          <ul>
+            <li>Banking Law</li>
+            <li>Corporate and Commercial Law</li>
+            <li>Tax Litigation</li>
+            <li>Insurance Law</li>
+          </ul>
+        </div>
+        
+        <div class="area-group">
+          <h3><i class="fas fa-home"></i> Property & Real Estate</h3>
+          <ul>
+            <li>Property Law</li>
+            <li>Immovable Property Disputes</li>
+            <li>Landlord-Tenant Disputes</li>
+            <li>Construction Litigation</li>
+          </ul>
+        </div>
+        
+        <div class="area-group">
+          <h3><i class="fas fa-balance-scale"></i> Civil Litigation</h3>
+          <ul>
+            <li>Personal Injury Claims</li>
+            <li>Insurance Claims and Disputes</li>
+            <li>Traffic Accidents</li>
+            <li>Torts</li>
+          </ul>
+        </div>
+        
+        <div class="area-group">
+          <h3><i class="fas fa-users"></i> Family & Individual</h3>
+          <ul>
+            <li>Family Law</li>
+            <li>Probate Litigation</li>
+            <li>Employment & Labour Law</li>
+            <li>Criminal Law</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="team-highlights">
+        <h3>Why Choose Our Litigation Team?</h3>
+        <div class="benefits-section">
+          <div class="benefit-card">
+            <i class="fas fa-gavel"></i>
+            <h4>Courtroom Excellence</h4>
+            <p>Our attorneys have extensive trial experience and a history of successful verdicts and settlements.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <i class="fas fa-handshake"></i>
+            <h4>Client-Focused Approach</h4>
+            <p>We develop strategies aligned with your specific goals, keeping you informed throughout the process.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <i class="fas fa-chess"></i>
+            <h4>Strategic Thinking</h4>
+            <p>We anticipate challenges and develop proactive solutions to complex legal problems.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="cta-section">
+        <h3>Facing a legal dispute? Let our litigation team help.</h3>
+        <p>Schedule a consultation to discuss your case with our experienced attorneys.</p>
+        <a href="/#contact" class="cta-button">Contact Us Today</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placeholder for Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // Load Header
+    fetch('../header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+
+    // Load Footer
+    fetch('../footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

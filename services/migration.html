@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Migration Services - Zambas Law</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <style>
+    /* Enhanced Professional Migration Page Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    
+    .service-page {
+      padding: 60px 20px 80px;
+      padding-top: 100px; /* Ensure content doesn't hide behind a fixed header */
+      background: linear-gradient(135deg, #ffffff, #f4f4f4);
+    }
+    
+    .service-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 60px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      border-radius: 12px;
+      text-align: left;
+    }
+    
+    .page-header {
+      position: relative;
+      margin-bottom: 50px;
+    }
+    
+    .page-header h1 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #1a1a1a;
+      border-bottom: 3px solid #007BFF;
+      padding-bottom: 15px;
+      display: inline-block;
+    }
+    
+    .page-header::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #e0e0e0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    
+    .intro-text {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+      color: #444;
+    }
+    
+    .service-content p {
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #555;
+    }
+    
+    /* Migration Services List */
+    .service-list {
+      margin-top: 40px;
+    }
+    
+    .service-list h3 {
+      font-size: 24px;
+      color: #007BFF;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .service-list ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .service-list ul li {
+      font-size: 16px;
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 30px;
+      transition: background-color 0.3s ease, padding-left 0.3s ease;
+    }
+    
+    .service-list ul li:last-child {
+      border-bottom: none;
+    }
+    
+    .service-list ul li::before {
+      content: "\f0da";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      top: 12px;
+      color: #007BFF;
+      transition: transform 0.2s ease;
+    }
+    
+    .service-list ul li:hover {
+      background-color: #f0f0f0;
+      padding-left: 35px;
+      border-radius: 4px;
+    }
+    
+    .service-list ul li:hover::before {
+      transform: translateX(5px);
+    }
+    
+    /* Migration Process Section */
+    .process-section {
+      margin-top: 50px;
+    }
+    
+    .process-section h3 {
+      font-size: 24px;
+      color: #007BFF;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    
+    .process-step {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+      position: relative;
+    }
+    
+    .step-number {
+      width: 40px;
+      height: 40px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0 auto 15px;
+    }
+    
+    .process-step h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    .process-step p {
+      font-size: 15px;
+      color: #666;
+      margin: 0;
+    }
+    
+    /* Why Choose Our Migration Team Section */
+    .benefits-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    
+    .benefit-card {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    
+    .benefit-card i {
+      font-size: 28px;
+      color: #007BFF;
+      margin-bottom: 15px;
+    }
+    
+    .benefit-card h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    .benefit-card p {
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 0;
+    }
+    
+    /* Call-to-Action Section */
+    .cta-section {
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 8px;
+      margin-top: 50px;
+      text-align: center;
+      border-left: 4px solid #007BFF;
+    }
+    
+    .cta-section h3 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background-color: #007BFF;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-top: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .cta-button:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,123,255,0.2);
+    }
+    
+    @media (max-width: 768px) {
+      .service-content {
+         padding: 40px 25px;
+      }
+      
+      .page-header h1 {
+         font-size: 36px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .service-content {
+         padding: 30px 20px;
+      }
+      
+      .page-header h1 {
+         font-size: 30px;
+      }
+      
+      .intro-text {
+         font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Placeholder for Header -->
+  <div id="header-placeholder"></div>
+  
+  <!-- Migration Service Section -->
+  <section id="migration" class="service-page">
+    <div class="service-content">
+      <div class="page-header">
+        <h1>MIGRATION</h1>
+      </div>
+      
+      <p class="intro-text">
+        Our law firm offers up-to-date guidance, assistance, and representation for clients navigating the complexities of migration in Cyprus.
+      </p>
+      
+      <div class="service-list">
+        <h3><i class="fas fa-plane-departure"></i> Our Migration Services Include:</h3>
+        <ul>
+          <li>Acquisition of Cypriot citizenship by investment</li>
+          <li>Citizenship applications</li>
+          <li>Employment permits</li>
+          <li>Permanent residence permits</li>
+          <li>Immigration permits</li>
+          <li>Visas</li>
+        </ul>
+      </div>
+      
+      <p>
+        We understand that every migration journey is unique. Our experienced team works closely with you to identify the best legal pathways, prepare comprehensive documentation, and liaise with relevant authorities to ensure a smooth and efficient process.
+      </p>
+      
+
+      
+      <!-- Why Choose Our Migration Team Section -->
+      <div class="benefits-section">
+        <h3>Why Choose Our Migration Team?</h3>
+        <div class="benefit-card">
+          <i class="fas fa-user-check"></i>
+          <h4>Expert Guidance</h4>
+          <p>Benefit from our extensive expertise in migration law and citizenship by investment.</p>
+        </div>
+        <div class="benefit-card">
+          <i class="fas fa-clock"></i>
+          <h4>Efficient Processing</h4>
+          <p>We streamline the application process to ensure timely and effective results.</p>
+        </div>
+        <div class="benefit-card">
+          <i class="fas fa-handshake"></i>
+          <h4>Personalized Service</h4>
+          <p>Our team tailors solutions to your unique circumstances, ensuring the best outcomes.</p>
+        </div>
+      </div>
+      
+      <!-- Call-to-Action Section -->
+      <div class="cta-section">
+        <h3>Ready to Begin Your Migration Journey?</h3>
+        <p>Contact our experts today to discuss your options and start a seamless migration process.</p>
+        <a href="/#contact" class="cta-button">Contact Us Today</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Placeholder for Footer -->
+  <div id="footer-placeholder"></div>
+  
+  <script>
+    // Load Header
+    fetch('../header.html')
+      .then(response => response.text())
+      .then(data => {
+         document.getElementById('header-placeholder').innerHTML = data;
+      });
+      
+    // Load Footer
+    fetch('../footer.html')
+      .then(response => response.text())
+      .then(data => {
+         document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+</body>
+</html>
