@@ -186,6 +186,22 @@
       .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
       });
+    document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+    });
+
+    // Dropdown Toggle for Mobile
+    document.querySelectorAll(".dropdown").forEach((dropdown) => {
+        dropdown.addEventListener("click", function () {
+            this.classList.toggle("open");
+        });
+    });
+});
+    
   </script>
 </body>
 </html>
