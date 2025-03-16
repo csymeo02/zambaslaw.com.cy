@@ -2,40 +2,36 @@
 <header>
   <div class="header-container">
     <div class="logo">
-      <a href="https://csymeo02.github.io/zambaslaw.com.cy/#home">
-        <img src="https://csymeo02.github.io/zambaslaw.com.cy/zambas-logo-rm-background.png" alt="Zambas Law Logo">
+      <!-- Logo links to homepage root + #home -->
+      <a href="/#home">
+        <img src="zambas-logo-rm-background.png" alt="Zambas Law Logo">
       </a>
     </div>
-
-    <!-- Mobile Menu Button -->
-    <button class="menu-toggle" aria-label="Open Menu">
-      <i class="fas fa-bars"></i>
-    </button>
-
     <nav>
-      <ul class="nav-links">
-        <li><a href="https://csymeo02.github.io/zambaslaw.com.cy/#home">Home</a></li>
-        <li><a href="https://csymeo02.github.io/zambaslaw.com.cy/#about">About</a></li>
+      <ul>
+        <!-- These all point to the site root, then jump to the relevant section -->
+        <li><a href="/#home">Home</a></li>
+        <li><a href="/#about">About</a></li>
         
         <!-- Dropdown for Services -->
         <li class="dropdown">
-          <a href="https://csymeo02.github.io/zambaslaw.com.cy/#services" class="dropbtn">Services</a>
+          <!-- The parent Services link jumps to the #services section on the homepage -->
+          <a href="/#services" class="dropbtn">Services</a>
           <ul class="dropdown-content">
-            <li><a href="https://csymeo02.github.io/zambaslaw.com.cy/services/litigation.html">Litigation</a></li>
-            <li><a href="https://csymeo02.github.io/zambaslaw.com.cy/services/corporate.html">Corporate & Commercial Law</a></li>
-            <li><a href="https://csymeo02.github.io/zambaslaw.com.cy/services/property.html">Property Law</a></li>
-            <li><a href="https://csymeo02.github.io/zambaslaw.com.cy/services/family.html">Family Law</a></li>
-            <li><a href="https://csymeo02.github.io/zambaslaw.com.cy/services/employment.html">Employment Law</a></li>
-            <li><a href="https://csymeo02.github.io/zambaslaw.com.cy/services/inheritance.html">Inheritance Law</a></li>
-            <li><a href="https://csymeo02.github.io/zambaslaw.com.cy/services/intellectual.html">Intellectual Property</a></li>
-            <li><a href="https://csymeo02.github.io/zambaslaw.com.cy/services/migration.html">Migration</a></li>
+            <!-- Subpages remain the same, pointing to actual HTML files in /services/ -->
+            <li><a href="/services/litigation.html">Litigation</a></li>
+            <li><a href="/services/corporate.html">Corporate &amp; Commercial Law</a></li>
+            <li><a href="/services/property.html">Property Law</a></li>
+            <li><a href="/services/family.html">Family Law</a></li>
+            <li><a href="/services/employment.html">Employment Law</a></li>
+            <li><a href="/services/inheritance.html">Inheritance Law</a></li>
+            <li><a href="/services/intellectual.html">Intellectual Property</a></li>
+            <li><a href="/services/migration.html">Migration</a></li>
           </ul>
         </li>
         
-        <li><a href="https://csymeo02.github.io/zambaslaw.com.cy/#contact">Contact</a></li>
+        <li><a href="/#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
-
-
